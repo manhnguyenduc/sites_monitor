@@ -17,7 +17,7 @@ def check_domain(domain):
         if r.status_code != 200:
             notifications.append({domain: r.status_code})
     except:
-        notifications.append({domain: "is timeout"})
+        notifications.append({domain: " is timeout"})
 
 
 def mon_domain(q):
